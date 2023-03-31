@@ -1,5 +1,5 @@
 #- name: Copy script from local to remote machine
- - hosts: qa.netred.cl
+ - hosts: raulaxxo.cl
    become: true   
    tasks:
     - name: Copy  script to remote_machine
