@@ -2,10 +2,11 @@
   become: true
 
   tasks:
-    - name: set timezone
+    - name: Set timezone
       timezone:
         name: America/Santiago
         
-    - name: Print version
-      debug:
-        msg: " Time Zone : {{ timezone.stdout }}"
+    - name: Print return information from the previous task
+      ansible.builtin.debug:
+      var: result
+      verbosity: 2
