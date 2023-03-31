@@ -1,4 +1,4 @@
-- hosts: qa.netred.cl  # reemplaza <nombre-del-servidor> por el nombre o dirección IP del servidor
+- hosts: raulaxxo.cl  # reemplaza <nombre-del-servidor> por el nombre o dirección IP del servidor
   become: true
 
   tasks:
