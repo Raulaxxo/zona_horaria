@@ -5,3 +5,7 @@
     - name: set timezone
       timezone:
         name: America/Santiago
+        
+    - name: Print version
+      debug:
+        msg: " Time Zone : {{ timezone.stdout }}"
