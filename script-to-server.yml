@@ -1,0 +1,8 @@
+#- name: Copy script from local to remote machine
+ - hosts: qa.netred.cl
+   become: true   
+   tasks:
+    - name: Copy  script to remote_machine
+      template: src=zona_horaria.sh dest=/home/ec2-user/zona_horaria.sh mode=600
+    - name: Execute script on remote_machine
+      command: sh /home/ec2-user/zona_horaria.sh

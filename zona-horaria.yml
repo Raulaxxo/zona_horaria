@@ -1,0 +1,7 @@
+- hosts: qa.netred.cl  # reemplaza <nombre-del-servidor> por el nombre o dirección IP del servidor
+  become: true
+
+  tasks:
+    - name: set timezone
+      timezone:
+        name: America/New_York
